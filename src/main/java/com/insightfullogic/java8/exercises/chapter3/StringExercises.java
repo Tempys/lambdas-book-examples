@@ -19,7 +19,7 @@ public class StringExercises {
     // Question 8
     public static Optional<String> mostLowercaseString(List<String> strings) {
         return strings.stream()
-                .max(Comparator.comparing(StringExercises::countLowercaseLetters));
+                       .max(Comparator.comparing(StringExercises::countLowercaseLetters));
     }
 
 }

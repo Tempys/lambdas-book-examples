@@ -20,6 +20,7 @@ public class MapUsingReduce {
         	List<O> newAcc = new ArrayList<>(acc);
         	newAcc.add(mapper.apply(x));
             return newAcc;
+
         }, (List<O> left, List<O> right) -> {
         	// We are copying left to new list to avoid mutating it. 
         	List<O> newLeft = new ArrayList<>(left);
